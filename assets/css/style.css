@@ -269,18 +269,88 @@ img {
 /* Mobile Navigation Trigger */
 .menu-toggle {
     display: none;
+    color: var(--color-primary);
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 6px;
+    border-radius: var(--radius-md);
+    transition: background-color var(--transition-fast);
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-toggle:hover {
+    background-color: var(--color-surface-container-low);
+}
+
+.menu-toggle span {
     font-size: 28px;
+    display: block;
 }
 
 @media (max-width: 768px) {
     .nav-links {
-        display: none; /* Can be handled dynamically via JS mobile menu */
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-surface-bright);
+        box-shadow: var(--shadow-md);
+        padding: 24px var(--spacing-margin-mobile);
+        gap: 20px;
+        z-index: 99;
+        border-top: 1px solid var(--color-surface-container-high);
     }
+    
+    .nav-links.active {
+        display: flex;
+        animation: slideDown 0.3s ease-out forwards;
+    }
+
+    .nav-link {
+        font-size: 16px;
+        padding: 10px 0;
+        border-bottom: 1px solid var(--color-surface-container-high);
+        width: 100%;
+    }
+    
+    .nav-link:last-child {
+        border-bottom: none;
+    }
+
     .menu-toggle {
-        display: block;
+        display: inline-flex;
     }
     .header-location {
         display: none;
+    }
+    .cta-banner {
+        padding: 32px 24px !important;
+        height: auto !important;
+        min-height: 300px;
+    }
+    .cta-title {
+        font-size: 28px !important;
+    }
+    .hero-title {
+        font-size: 32px !important;
+    }
+    .section-title {
+        font-size: 28px !important;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -1301,9 +1371,17 @@ img {
         grid-template-columns: 1fr;
         gap: 60px;
     }
+    .story-img-bg {
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        transform: scale(1.05) rotate(2deg);
+        border-radius: 40px;
+    }
     .story-badge {
         bottom: -16px;
-        right: -16px;
+        right: 0;
         padding: 24px;
     }
 }
@@ -1935,6 +2013,10 @@ img {
 
 @media (max-width: 576px) {
     .cta-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .checker-form {
         flex-direction: column;
         align-items: stretch;
     }

@@ -618,6 +618,52 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Mobile Navigation Menu Toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            navLinks.classList.toggle('active');
+            const icon = menuToggle.querySelector('.material-symbols-outlined');
+            if (icon) {
+                if (navLinks.classList.contains('active')) {
+                    icon.textContent = 'close';
+                    menuToggle.setAttribute('aria-expanded', 'true');
+                } else {
+                    icon.textContent = 'menu';
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                }
+            }
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (navLinks.classList.contains('active') && !navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+                navLinks.classList.remove('active');
+                const icon = menuToggle.querySelector('.material-symbols-outlined');
+                if (icon) {
+                    icon.textContent = 'menu';
+                }
+                menuToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // Close menu when clicking any link
+        const links = navLinks.querySelectorAll('.nav-link');
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                const icon = menuToggle.querySelector('.material-symbols-outlined');
+                if (icon) {
+                    icon.textContent = 'menu';
+                }
+                menuToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+    }
+
     // Render initial menu if menu-items-grid is in current DOM
     renderMenuPage();
 });
