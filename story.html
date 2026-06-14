@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Story | Delhi Delights</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/whatsapp-widget.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">Delhi <span>Delights</span></a>
+            
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="menu.html" class="nav-link">Menu</a>
+                <a href="categories.html" class="nav-link">Categories</a>
+                <a href="locations.html" class="nav-link">Locations</a>
+                <a href="story.html" class="nav-link active">Our Story</a>
+            </nav>
+            
+            <div class="header-actions">
+                <div class="header-location">
+                    <span class="material-symbols-outlined">location_on</span>
+                    <span>South Delhi</span>
+                </div>
+                <button class="action-btn" onclick="openCart()">
+                    <span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+                    <span class="badge cart-badge-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main style="padding-bottom: 80px;">
+        
+        <!-- Story Hero Section -->
+        <section class="hero-sec" style="background-image: linear-gradient(to right, rgba(87,0,0,0.9), rgba(87,0,0,0.3)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuAvvSbpScwGEwsrkRteSwgiuztjuf_22vDAcAW0rFWOe0MtuqNHpK8u753H1rmqvQDGfohXFA5-7HjM8kQvQcs5btaC4X0b4x_zXLIOT1V8-JDQ-AVWLSgsIiFeQfeTS5pTK563xGWXzxPPVFELcnuEmz3Ii0DqMKnIzyl7TSg5Gk0hAK4MheEdWrZ83mKDgxohLxzBLtquqYXND94BqvVGToWLW-zgCUZC0hPc3Jmr5ErHNIRnc0qWqo68tJfcHiP8Fs8MbAmzBZc'); background-size: cover; background-position: center; height: 500px; display: flex; align-items: center; color: white;">
+            <div class="container">
+                <div style="max-width: 600px;">
+                    <h1 class="hero-title" style="color: white; font-size: 52px; margin-bottom: 16px;">The Heart of Delhi</h1>
+                    <p class="hero-desc" style="color: rgba(255,255,255,0.9); font-size: 18px;">A journey through time, spice, and tradition. We bring the authentic flavors of old Delhi's bustling heritage kitchens straight to your modern table.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Culinary Heritage Section -->
+        <section class="section">
+            <div class="container story-flex" style="align-items: center;">
+                <div class="story-content">
+                    <span class="radius-badge">Culinary Heritage</span>
+                    <h2 class="section-title">Generations of <span>Wisdom</span></h2>
+                    <p class="hero-desc" style="font-size: 16px; max-width: 100%;">Our recipes aren't just instructions; they are heirlooms. Passed down through three generations of master chefs from Chandni Chowk, every spice blend is balanced using the same secrets that once delighted royalty.</p>
+                    <p style="color: var(--color-on-surface-variant); font-size: 14.5px; opacity: 0.9;">We respect the slow-cooking methods, the overnight marinades, and the hand-pounded masalas that define true North Indian cuisine. At Delhi Delights, we don't just cook; we preserve a legacy.</p>
+                </div>
+                <div class="story-img-wrap" style="display: flex; justify-content: flex-end;">
+                    <div style="position: relative; max-width: 420px; width: 100%;">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDo6X-MMzU1-7koCl_xjRk88pW2FBckqalE1JPstyQVlHBoYD4yz5SFy3vzRqtOR6768T93xPcdnjcxXxFztym70KbDymOQMLzFH0ejdzMMeep13cL4lF6KGX-jTT6gKpKPjIXrD1pd9I3Rt_CfiksVuUN5OGOst3KWs3l1tvnuKg5BXZS61knQ1z_XEbPQm26I8Q9wvQOaZiBh_Jno9ARoD6JulOGSf5pU4Ytb-bbGayS0mTfCzH-in1qR4yyXq-kcBYD731fmRlw" alt="Naan dough hand preparation" class="story-img" style="width: 100%;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bento Chefs & Stats Section -->
+        <section class="section bg-light jali-pattern">
+            <div class="container">
+                <div class="section-title-wrap" style="text-align: center; justify-content: center; flex-direction: column; align-items: center; gap: 8px;">
+                    <h2 class="section-title">Meet Our Master <span>Chefs</span></h2>
+                    <p class="section-subtitle">The culinary artisans behind your favorite flavors.</p>
+                </div>
+
+                <div class="bento-grid" style="margin-top: 48px;">
+                    
+                    <!-- Head Chef -->
+                    <div class="bento-chef-card">
+                        <div class="bento-chef-img-wrap">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjFOtc5FyjgU-AFF9egACx_rDkIIRAf3paNzATwkL0bMjisRq_WyrjuB--yI8NgCb0Lc8ugx5OasutezJ_u0OsZ-pDIzXc-j_eQ4GcP0HPySYoQ_Lk-7ej6IH8mIMaZTlXMHxgzsT_ac-C1VDdsXsaHvg7dARPeS75fkg4L3ID-JGynZBTxuFTKGB03fuq2FZLh0INU8u-Js2FvgeFGRjX9Lzng5cJqhvunUIXLYqBRyqzCI6GlVYSYFs8D4j-M4P7y070izLJZkQ" alt="Chef Vikram Malhotra" class="bento-chef-img">
+                        </div>
+                        <div class="bento-chef-body">
+                            <h3 class="bento-chef-title">Chef Vikram Malhotra</h3>
+                            <span class="bento-chef-subtitle">Executive Chef - 25 Years Culinary Journey</span>
+                            <p class="bento-chef-text">The culinary visionary leading our kitchen, specializing in slow-cooked Mughlai delicacies and hand-crafted spice secrets.</p>
+                        </div>
+                    </div>
+
+                    <!-- Chef Sameer -->
+                    <div class="bento-card-small">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtGmRBsMIxpijTRaFRmeip11v5ZeBj-m5kjaytfPTKc8YMZwb4sBvIva0u86cOID85tmfZpheK8VethAq2kD29DvAa_dDHMBj9-UZqL5wFXkeBpwwtQ6_Cb00KjSa8bs0TE8yfYH3x1xNa8K4FiTJ-IT2S0vdAgnZSeNeuX3u9O17bicNMDXWfbHN39oWBD-W0DpO8Xa2d2-6sX4M558aJ6T4JR0v7niUANYRfmxFPsjj__FfxChn4YwoQimtm1voKe7JZlMA-ykc" alt="Chef Sameer Khan tandoor Seekh skewers" class="bento-card-small-img">
+                        <div class="bento-card-small-body">
+                            <h3 class="bento-card-small-title">Chef Sameer Khan</h3>
+                            <p class="bento-card-small-text">Tandoor Master - Grilling kebabs and baking naans over authentic clay ovens.</p>
+                        </div>
+                    </div>
+
+                    <!-- Chef Ananya -->
+                    <div class="bento-card-small">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjhaTaopEDcX2MFgBbu_o-UeUs4fNuMh5z-fBsT_ucAH_1CTkAHJYUVtUJ9MR3PCM2AL6XsIym1Vb_1a4w4SnGonuTXkE4IoPyWCAI7_rN_Ov4hiZfxCkRjSOEhueTwofeQWjVLFIwRfldroyVQi_7TUu93KyPVmJY9yZoRe6cNUnSzVFt9ycbjeGD3g2XgjwUJRFD_87578Uy2H7GSbhKLANSMDZ0LrDbWJa4yoMqzERTb6GQCmgZljRtqVcK4_ZRDx8x0K-n3zk" alt="Chef Ananya Rao plating" class="bento-card-small-img">
+                        <div class="bento-card-small-body">
+                            <h3 class="bento-card-small-title">Chef Ananya Rao</h3>
+                            <p class="bento-card-small-text">Pastry &amp; Fusion Artisan - Crafting premium Shahi Tukdas and local dessert delights.</p>
+                        </div>
+                    </div>
+
+                    <!-- Stats Box -->
+                    <div class="bento-stats-box">
+                        <div class="bento-stat-item">
+                            <div class="bento-stat-num">150+</div>
+                            <div class="bento-stat-lbl">Original Recipes</div>
+                        </div>
+                        <div class="bento-stat-item">
+                            <div class="bento-stat-num">45k+</div>
+                            <div class="bento-stat-lbl">Happy Diners</div>
+                        </div>
+                        <div class="bento-stat-item">
+                            <div class="bento-stat-num">3</div>
+                            <div class="bento-stat-lbl">Cloud Kitchens</div>
+                        </div>
+                        <div class="bento-stat-item">
+                            <div class="bento-stat-num">100%</div>
+                            <div class="bento-stat-lbl">Authentic Spices</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Commitments -->
+        <section class="section">
+            <div class="container">
+                <div class="section-title-wrap" style="text-align: center; justify-content: center; flex-direction: column; align-items: center; gap: 8px;">
+                    <h2 class="section-title">Our <span>Commitment</span> to Quality</h2>
+                    <p class="section-subtitle">We hold our kitchen practices to the highest benchmarks.</p>
+                </div>
+
+                <div class="items-grid" style="grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); margin-top: 48px;">
+                    
+                    <!-- Sourcing -->
+                    <div style="text-align: center; padding: 24px;">
+                        <div class="delivery-feat-icon" style="margin: 0 auto 20px auto; width: 64px; height: 64px; background-color: var(--color-surface-container);">
+                            <span class="material-symbols-outlined" style="font-size: 32px; color: var(--color-secondary);">eco</span>
+                        </div>
+                        <h3 class="bento-card-small-title" style="font-size: 18px; margin-bottom: 12px;">Local Sourcing</h3>
+                        <p style="font-size: 14px; color: var(--color-on-surface-variant); line-height: 1.6;">We partner with local farmers across Delhi NCR to ensure every vegetable, dairy product, and grain is fresh from the earth, supporting our community while feeding it.</p>
+                    </div>
+
+                    <!-- Purity -->
+                    <div style="text-align: center; padding: 24px;">
+                        <div class="delivery-feat-icon" style="margin: 0 auto 20px auto; width: 64px; height: 64px; background-color: var(--color-surface-container);">
+                            <span class="material-symbols-outlined" style="font-size: 32px; color: var(--color-secondary);">verified</span>
+                        </div>
+                        <h3 class="bento-card-small-title" style="font-size: 18px; margin-bottom: 12px;">Purity Guaranteed</h3>
+                        <p style="font-size: 14px; color: var(--color-on-surface-variant); line-height: 1.6;">Zero preservatives. Zero additives. Our spices are ground weekly in small batches to preserve the natural oils and intense aromas that characterize authentic North Indian food.</p>
+                    </div>
+
+                    <!-- Hygiene -->
+                    <div style="text-align: center; padding: 24px;">
+                        <div class="delivery-feat-icon" style="margin: 0 auto 20px auto; width: 64px; height: 64px; background-color: var(--color-surface-container);">
+                            <span class="material-symbols-outlined" style="font-size: 32px; color: var(--color-secondary);">restaurant</span>
+                        </div>
+                        <h3 class="bento-card-small-title" style="font-size: 18px; margin-bottom: 12px;">Hygiene Standards</h3>
+                        <p style="font-size: 14px; color: var(--color-on-surface-variant); line-height: 1.6;">Operating at world-class standards, our kitchens are designed for absolute safety, ensuring your food is prepared in a pristine, touchless environment with love and care.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="container" style="margin-top: 40px;">
+            <div class="cta-banner">
+                <h2 class="cta-title">Taste the Tradition Today</h2>
+                <p class="cta-text">Ready to experience the authentic culinary soul of Delhi? Explore our curated menu of classics and modern favorites.</p>
+                <div class="cta-buttons">
+                    <a href="menu.html" class="btn btn-primary" style="background-color: var(--color-primary);">Explore Menu</a>
+                    <a href="locations.html" class="btn cta-btn-outline">Find Kitchens</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand-col">
+                <a href="index.html" class="logo">Delhi <span>Delights</span></a>
+                <p class="footer-desc">Bringing the authentic street food and royal Mughlai delicacies of Old Delhi straight to your kitchen. Quality, taste, and tradition blended together.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-link"><span class="material-symbols-outlined">explore</span></a>
+                    <a href="#" class="social-link"><span class="material-symbols-outlined">campaign</span></a>
+                    <a href="#" class="social-link"><span class="material-symbols-outlined">alternate_email</span></a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html" class="footer-link">Home</a></li>
+                    <li><a href="menu.html" class="footer-link">Menu</a></li>
+                    <li><a href="categories.html" class="footer-link">Categories</a></li>
+                    <li><a href="story.html" class="footer-link footer-link-active">Our Story</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="footer-title">Support</h4>
+                <ul class="footer-links">
+                    <li><a href="locations.html" class="footer-link">Locations</a></li>
+                    <li><a href="#" class="footer-link">Help Center</a></li>
+                    <li><a href="#" class="footer-link">Contact Us</a></li>
+                    <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-newsletter">
+                <h4 class="footer-title">Subscribe</h4>
+                <p>Subscribe for flavor updates & secret recipes from Chef Vikram.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+                    <input type="email" class="newsletter-input" placeholder="Your Email Address" required>
+                    <button type="submit" class="btn btn-primary" style="padding: 10px;">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <p>© 2026 Delhi Delights. Authentic Flavors from the Heart of Delhi. Built with Tradition.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky Footer View Cart -->
+    <div class="mobile-cart-bar" id="mobile-cart-bar" onclick="openCart()">
+        <div class="mobile-cart-left">
+            <span class="mobile-cart-count" id="mobile-cart-qty">0</span>
+            <span class="mobile-cart-label">View Cart</span>
+        </div>
+        <div class="mobile-cart-price" id="mobile-cart-price-val">₹0</div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/whatsapp.js"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Delhi Delights - Authentic Flavors</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/whatsapp-widget.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">Delhi <span>Delights</span></a>
+            
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="menu.html" class="nav-link active">Menu</a>
+                <a href="categories.html" class="nav-link">Categories</a>
+                <a href="locations.html" class="nav-link">Locations</a>
+                <a href="story.html" class="nav-link">Our Story</a>
+            </nav>
+            
+            <div class="header-actions">
+                <div class="header-location">
+                    <span class="material-symbols-outlined">location_on</span>
+                    <span>South Delhi</span>
+                </div>
+                <button class="action-btn" onclick="openCart()">
+                    <span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+                    <span class="badge cart-badge-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main style="padding-top: 40px; padding-bottom: 80px;">
+        <div class="container">
+            
+            <!-- Page Header -->
+            <div class="section-title-wrap" style="align-items: flex-start; flex-direction: column; gap: 8px;">
+                <h1 class="section-title" style="font-size: 40px;">Our <span>Menu</span></h1>
+                <p class="section-subtitle" style="font-size: 16px; margin: 0;">Explore a curated selection of Delhi's finest culinary treasures.</p>
+            </div>
+
+            <!-- Menu Grid Layout -->
+            <div class="menu-layout" style="margin-top: 32px;">
+                
+                <!-- Category Sidebar -->
+                <aside class="menu-sidebar">
+                    <div class="sticky-sidebar">
+                        <h3 class="sidebar-title">Categories</h3>
+                        <div class="sidebar-links">
+                            <button class="sidebar-link active" data-category="All Items" onclick="selectCategory('All Items', this)">
+                                <span>All Items</span>
+                                <span class="material-symbols-outlined" style="font-size: 16px;">chevron_right</span>
+                            </button>
+                            <button class="sidebar-link" data-category="North Indian" onclick="selectCategory('North Indian', this)">
+                                <span>North Indian</span>
+                                <span class="material-symbols-outlined" style="font-size: 16px;">chevron_right</span>
+                            </button>
+                            <button class="sidebar-link" data-category="Burgers" onclick="selectCategory('Burgers', this)">
+                                <span>Burgers</span>
+                                <span class="material-symbols-outlined" style="font-size: 16px;">chevron_right</span>
+                            </button>
+                            <button class="sidebar-link" data-category="Pizzas" onclick="selectCategory('Pizzas', this)">
+                                <span>Pizzas</span>
+                                <span class="material-symbols-outlined" style="font-size: 16px;">chevron_right</span>
+                            </button>
+                            <button class="sidebar-link" data-category="Rolls" onclick="selectCategory('Rolls', this)">
+                                <span>Rolls</span>
+                                <span class="material-symbols-outlined" style="font-size: 16px;">chevron_right</span>
+                            </button>
+                            <button class="sidebar-link" data-category="Chinese" onclick="selectCategory('Chinese', this)">
+                                <span>Chinese</span>
+                                <span class="material-symbols-outlined" style="font-size: 16px;">chevron_right</span>
+                            </button>
+                            <button class="sidebar-link" data-category="Desserts" onclick="selectCategory('Desserts', this)">
+                                <span>Desserts</span>
+                                <span class="material-symbols-outlined" style="font-size: 16px;">chevron_right</span>
+                            </button>
+                        </div>
+
+                        <div class="sidebar-divider"></div>
+
+                        <h3 class="sidebar-title pref-group-header">Dietary Preference</h3>
+                        <div class="pref-group">
+                            <label class="pref-label">
+                                <input type="checkbox" id="veg-only-checkbox" class="pref-checkbox">
+                                <span>Vegetarian Only</span>
+                            </label>
+                            <label class="pref-label">
+                                <input type="checkbox" id="spicy-only-checkbox" class="pref-checkbox">
+                                <span>Spicy Specials</span>
+                            </label>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Menu Items Panel -->
+                <div class="menu-content">
+                    
+                    <!-- Interactive Search Bar -->
+                    <div class="search-bar-wrap">
+                        <input type="text" id="menu-search-input" class="search-input" placeholder="Search for your favorites (e.g. Butter Chicken, Dal, Paneer Tikka)...">
+                        <span class="material-symbols-outlined search-icon">search</span>
+                    </div>
+
+                    <!-- Dynamic Menu Grid -->
+                    <div class="items-grid" id="menu-items-grid">
+                        <!-- Loaded dynamically via app.js -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand-col">
+                <a href="index.html" class="logo">Delhi <span>Delights</span></a>
+                <p class="footer-desc">Bringing the authentic street food and royal Mughlai delicacies of Old Delhi straight to your kitchen. Quality, taste, and tradition blended together.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-link"><span class="material-symbols-outlined">explore</span></a>
+                    <a href="#" class="social-link"><span class="material-symbols-outlined">campaign</span></a>
+                    <a href="#" class="social-link"><span class="material-symbols-outlined">alternate_email</span></a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html" class="footer-link">Home</a></li>
+                    <li><a href="menu.html" class="footer-link footer-link-active">Menu</a></li>
+                    <li><a href="categories.html" class="footer-link">Categories</a></li>
+                    <li><a href="story.html" class="footer-link">Our Story</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="footer-title">Support</h4>
+                <ul class="footer-links">
+                    <li><a href="locations.html" class="footer-link">Locations</a></li>
+                    <li><a href="#" class="footer-link">Help Center</a></li>
+                    <li><a href="#" class="footer-link">Contact Us</a></li>
+                    <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-newsletter">
+                <h4 class="footer-title">Subscribe</h4>
+                <p>Subscribe for flavor updates & secret recipes from Chef Vikram.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+                    <input type="email" class="newsletter-input" placeholder="Your Email Address" required>
+                    <button type="submit" class="btn btn-primary" style="padding: 10px;">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <p>© 2026 Delhi Delights. Authentic Flavors from the Heart of Delhi. Built with Tradition.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky Footer View Cart -->
+    <div class="mobile-cart-bar" id="mobile-cart-bar" onclick="openCart()">
+        <div class="mobile-cart-left">
+            <span class="mobile-cart-count" id="mobile-cart-qty">0</span>
+            <span class="mobile-cart-label">View Cart</span>
+        </div>
+        <div class="mobile-cart-price" id="mobile-cart-price-val">₹0</div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/whatsapp.js"></script>
+</body>
+</html>

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delhi Delights | Authentic Flavors Delivered Hot</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/whatsapp-widget.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">Delhi <span>Delights</span></a>
+            
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="menu.html" class="nav-link">Menu</a>
+                <a href="categories.html" class="nav-link">Categories</a>
+                <a href="locations.html" class="nav-link">Locations</a>
+                <a href="story.html" class="nav-link">Our Story</a>
+            </nav>
+            
+            <div class="header-actions">
+                <div class="header-location">
+                    <span class="material-symbols-outlined">location_on</span>
+                    <span>South Delhi</span>
+                </div>
+                <button class="action-btn" onclick="openCart()">
+                    <span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+                    <span class="badge cart-badge-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section class="hero-sec">
+            <div class="container hero-flex">
+                <div class="hero-text-side">
+                    <div class="hero-tagline">
+                        <span class="material-symbols-outlined">auto_awesome</span>
+                        <span>Traditional Recipes, Modern Tech</span>
+                    </div>
+                    <h1 class="hero-title">Taste the <br><span>Heart</span> of Delhi Today</h1>
+                    <p class="hero-desc">Authentic flavors crafted with local spices and heritage recipes, delivered hot to your doorstep in premium hot-case packaging.</p>
+                    <div class="hero-ctas">
+                        <a href="menu.html" class="btn btn-primary">Order Now</a>
+                        <a href="menu.html" class="btn-text btn">View Menu <span class="material-symbols-outlined">arrow_right_alt</span></a>
+                    </div>
+                </div>
+                <div class="hero-image-side">
+                    <div class="hero-image-bg"></div>
+                    <div class="hero-image-container hero-shape">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfCVB4V9-qVZ5a4YxS6nbtxYAHcVzPdX4JcytjP9YEIU9vBPdjYxvgOe13P7gSmVs8eq_Q9nevi7nUecShMdmFBYraZK9b8vSHoLvErkD24tWBsCzd7NV4TRVr3K6eKSQsPAzw1q3P7-Bh5BejQjdxXlQpr7BBeVQ2TADbNFpPbg9RZsC99YMYZmcIK_bAh5L9R9vCU80CPutjaftO8s36-zeiqNT8FN4YnQ7qeVSLC3d5urqKd_sXIysJWsNCJJvswYI6DliZwH8" alt="Deconstructed Paneer Burger" class="hero-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Categories Chips Slider -->
+        <section class="section bg-light">
+            <div class="container">
+                <div class="category-slider">
+                    <!-- North Indian -->
+                    <div class="category-pill" onclick="window.location.href='menu.html'">
+                        <div class="category-pill-icon">
+                            <span class="material-symbols-outlined" style="font-size: 32px;">restaurant</span>
+                        </div>
+                        <span class="category-pill-name">North Indian</span>
+                    </div>
+                    <!-- Burgers -->
+                    <div class="category-pill active" onclick="window.location.href='menu.html'">
+                        <div class="category-pill-icon">
+                            <span class="material-symbols-outlined" style="font-size: 32px;">lunch_dining</span>
+                        </div>
+                        <span class="category-pill-name">Burgers</span>
+                    </div>
+                    <!-- Pizzas -->
+                    <div class="category-pill" onclick="window.location.href='menu.html'">
+                        <div class="category-pill-icon">
+                            <span class="material-symbols-outlined" style="font-size: 32px;">local_pizza</span>
+                        </div>
+                        <span class="category-pill-name">Pizzas</span>
+                    </div>
+                    <!-- Rolls -->
+                    <div class="category-pill" onclick="window.location.href='menu.html'">
+                        <div class="category-pill-icon">
+                            <span class="material-symbols-outlined" style="font-size: 32px;">fastfood</span>
+                        </div>
+                        <span class="category-pill-name">Rolls</span>
+                    </div>
+                    <!-- Chinese -->
+                    <div class="category-pill" onclick="window.location.href='menu.html'">
+                        <div class="category-pill-icon">
+                            <span class="material-symbols-outlined" style="font-size: 32px;">ramen_dining</span>
+                        </div>
+                        <span class="category-pill-name">Chinese</span>
+                    </div>
+                    <!-- Desserts -->
+                    <div class="category-pill" onclick="window.location.href='menu.html'">
+                        <div class="category-pill-icon">
+                            <span class="material-symbols-outlined" style="font-size: 32px;">icecream</span>
+                        </div>
+                        <span class="category-pill-name">Desserts</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Promotion Banner Section -->
+        <section class="section">
+            <div class="container">
+                <div class="cta-banner" style="background-image: linear-gradient(to right, rgba(87,0,0,0.9), rgba(87,0,0,0.5)), url('https://lh3.googleusercontent.com/aida-public/AB6AXuCWVzUDmtTuEohVQ96Xz7kqJREdzk_9wMqu6RY7A1UXQ9VGmuzhrF-JPfkQAn7o73jNfRNU6mU4UgGQ0eOx0jDMsszRwiWXg2aonwxWkCOfl9rB5hzIu6LlypSE-YHSPEGo7wC7Qj3oM5p5Bg4F9ViF1-pegmaHRrM4By87-eOUl1rQBnctCk7pz--J4fQfJKw-m6wY3fGLKYKE5kKM3nFX2KBxlU_RmygtPBUArKDOMLb1k5TfexOFS1DURjFdWsuXvrZPLT8-1D0'); background-size: cover; background-position: center;">
+                    <div class="radius-badge" style="border-color: white; color: white; margin: 0 auto 16px auto;">Limited Offer</div>
+                    <h2 class="cta-title" style="font-size: 40px; margin-bottom: 8px;">Buy 2 Get 1 Free on Pizzas</h2>
+                    <p class="cta-text">Valid on all hand-tossed and thin crust artisanal pizzas this weekend only. Taste the cheese-filled goodness today.</p>
+                    <div class="cta-buttons">
+                        <a href="menu.html" class="btn cta-btn-white">Grab Offer</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Signature Specialties -->
+        <section class="section">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <div>
+                        <h2 class="section-title">Our <span>Signature</span> Specialties</h2>
+                        <p class="section-subtitle">The most loved dishes from our kitchen to your plate.</p>
+                    </div>
+                    <a href="menu.html" class="btn-text btn">See All Items</a>
+                </div>
+                
+                <div class="items-grid">
+                    <!-- Item 1: Special Butter Chicken -->
+                    <div class="item-card">
+                        <div class="item-card-image-wrap">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcXp6DWAOXePvUHzm60YbW3NTwccaT6k3GhXpEzgw1UQ_NICAmvP7z9JXxPOp4jSrYZ2LkEg4QgP58u3MGwxJtqn-7hRqrPgbDJa5Tea6ZIZilly5I4-dE0Q7eBD-zPNfhQf507zLsZWhrRfW43dYZmSEgF0DWFngCGH1TwujNpl05-ANM-yUExIblLyZp5mDdsGmlt0NFSh94VNcyAbive2skzJqdtKHAy-FbJEY6UDppO3mYC2c0sJYXF49QmMKB3KlDU3X5GXE" alt="Special Butter Chicken" class="item-card-image" loading="lazy">
+                            <div class="nonveg-badge">
+                                <div class="nonveg-icon"><div></div></div>
+                            </div>
+                            <div class="item-badge">Bestseller</div>
+                        </div>
+                        <div class="item-card-content">
+                            <div class="item-card-header">
+                                <h3 class="item-title">Special Butter Chicken</h3>
+                                <span class="item-price">₹450</span>
+                            </div>
+                            <p class="item-desc">Slow-cooked in a rich tomato and cashew gravy with a touch of local butter.</p>
+                            <div class="item-actions">
+                                <button class="item-add-btn" onclick="addToCart('butter-chicken-special')">Add to Cart</button>
+                                <button class="item-fav-btn" onclick="toggleFavorite(this)">
+                                    <span class="material-symbols-outlined">favorite</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 2: Spicy Paneer Tikka Roll -->
+                    <div class="item-card">
+                        <div class="item-card-image-wrap">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuANxpoC0VOVWVhRXarVa7ndyaKMBnH9qv4wm4ZTMDCFRprv8GsnxUenMQRrR-vgjfBjsS1Wdr__oyx6VieM_VN88t2GzumbNDzoLF3rmPcR7OkzNwv7l2F7OueQvqAsIrPKpRBWS7DzyUSTnuZLm8e3ASuZrRQ5wT8vPQuKBqG1ImOxE_xPfFEyynTcPlReJzlLi64W0pR8p09Z_7mFVIYimDBrrqJID1GPDSrM11Pn71vZb54sqBMBEyR6coSaOHdG10OQljimuCk" alt="Spicy Paneer Tikka Roll" class="item-card-image" loading="lazy">
+                            <div class="veg-badge">
+                                <div class="veg-icon"><div></div></div>
+                            </div>
+                            <div class="item-badge">Popular</div>
+                        </div>
+                        <div class="item-card-content">
+                            <div class="item-card-header">
+                                <h3 class="item-title">Spicy Paneer Tikka Roll</h3>
+                                <span class="item-price">₹220</span>
+                            </div>
+                            <p class="item-desc">Tandoori-grilled paneer tossed in zesty spices, wrapped in a soft roomali roti.</p>
+                            <div class="item-actions">
+                                <button class="item-add-btn" onclick="addToCart('paneer-tikka-roll-spicy')">Add to Cart</button>
+                                <button class="item-fav-btn" onclick="toggleFavorite(this)">
+                                    <span class="material-symbols-outlined">favorite</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 3: Classic Veg Burger -->
+                    <div class="item-card">
+                        <div class="item-card-image-wrap">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7wL8GVbefVyy5kgsleluejcjnJ0AR9H1FbaLYkqA-pvj1jlukQWgWJdY_vIrDfbXnZ4S4C26QDiymTbCMl6hR9EvFquh4SM3YaiXxv5KlMuZ9QJkA2uVKn-iC9WLpXNWH_e0RbvAMLv4aTQVJXEF3GM2HyG1nHLQ_BroTuYFQrg6-qVIcLcBv2WS7nJAKNAmq5ZRnVdbwWKFRzTAJOa2HoCyrgjxGmOB9IqDDXHkp3PmdKF6w8Hxe71pYxjxIeltYq482v_SjzgE" alt="Classic Veg Burger" class="item-card-image" loading="lazy">
+                            <div class="veg-badge">
+                                <div class="veg-icon"><div></div></div>
+                            </div>
+                        </div>
+                        <div class="item-card-content">
+                            <div class="item-card-header">
+                                <h3 class="item-title">Classic Veg Burger</h3>
+                                <span class="item-price">₹180</span>
+                            </div>
+                            <p class="item-desc">Crispy vegetable patty with secret house sauce and fresh farm produce.</p>
+                            <div class="item-actions">
+                                <button class="item-add-btn" onclick="addToCart('classic-veg-burger')">Add to Cart</button>
+                                <button class="item-fav-btn" onclick="toggleFavorite(this)">
+                                    <span class="material-symbols-outlined">favorite</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 4: Pepperoni Feast Pizza -->
+                    <div class="item-card">
+                        <div class="item-card-image-wrap">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6VMJ6mJZm2SM3UvewLkwUUGgd5NktpRUO4pN_XiJTuTKFahhik36__mDKze0eqxU1pfdAixLehBc0aquwBExEEbm3uWOtGFQCeghWj1xcmnJmh2YEB2JL_jmzc95kDOMWOHp4bj4PRMu1FtE6I9ikmdQuH3nPTxSypnP1kkmUmT-j9GDXSO-Ohs9an7VueyOxqXJkKLqJYZQXf50vSOw9S_fTbFzlYWXQDGCuO2V2Unjdkx6cINLLnH-Brs3s9kdQ4hl1TCyY8kQ" alt="Pepperoni Feast Pizza" class="item-card-image" loading="lazy">
+                            <div class="nonveg-badge">
+                                <div class="nonveg-icon"><div></div></div>
+                            </div>
+                        </div>
+                        <div class="item-card-content">
+                            <div class="item-card-header">
+                                <h3 class="item-title">Pepperoni Feast Pizza</h3>
+                                <span class="item-price">₹590</span>
+                            </div>
+                            <p class="item-desc">Artisanal thin crust topped with premium pepperoni and double mozzarella cheese.</p>
+                            <div class="item-actions">
+                                <button class="item-add-btn" onclick="addToCart('pepperoni-feast-pizza')">Add to Cart</button>
+                                <button class="item-fav-btn" onclick="toggleFavorite(this)">
+                                    <span class="material-symbols-outlined">favorite</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Story Highlight Section -->
+        <section class="section bg-high">
+            <div class="container story-flex">
+                <div class="story-img-wrap">
+                    <div class="story-img-bg"></div>
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPMupNN761nO7Q_6SZ8X-qnVGU_p6245Ji0HUMGWoN8yhThsxxxKyBZ_aInD5fJCvA2-ES9BC1Uqvvo-zJ9VXtrO8eDPMDZqryVTOqp5A1WbVouaMiKDhZHt7OoDb1Uzz7QDM_BnLa7ekPitdaSxfpHXpuHiwINhKgysbI4ozzslT77sztwQjwBghy7T6n3-j3FNdK_1qGyT424lTnhbH4Wbk9sZxHCbO7Ixa4pWJPns4xkMEjk72hCvaEoKyDfl7-Yk0VkrN5nbs" alt="Spice mixing in kitchen" class="story-img">
+                    <div class="story-badge">
+                        <h4>15+</h4>
+                        <p>Years of Culinary Heritage and Secret Spices</p>
+                    </div>
+                </div>
+                
+                <div class="story-content">
+                    <h2 class="section-title">Our <span>Heritage</span>, Your Plate</h2>
+                    <p class="hero-desc" style="font-size: 16px; max-width: 100%;">Born in the bustling lanes of Old Delhi, our kitchen brings generations of culinary wisdom to the modern cloud era. We believe that true flavor lies in the details—from sourcing the finest hand-pounded spices to slow-cooking every curry.</p>
+                    <ul class="story-list">
+                        <li>
+                            <span class="material-symbols-outlined">check_circle</span>
+                            <span>Locally sourced, organic farm produce</span>
+                        </li>
+                        <li>
+                            <span class="material-symbols-outlined">check_circle</span>
+                            <span>Traditional wood-fired clay tandoors</span>
+                        </li>
+                        <li>
+                            <span class="material-symbols-outlined">check_circle</span>
+                            <span>Eco-friendly premium hot-case packaging</span>
+                        </li>
+                    </ul>
+                    <a href="story.html" class="btn btn-primary" style="width: fit-content;">Read Our Full Story</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Most Popular Items Slider -->
+        <section class="section">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <div>
+                        <h2 class="section-title">Most <span>Popular</span> Right Now</h2>
+                        <p class="section-subtitle">Weekly favorites ordered by South Delhi food enthusiasts.</p>
+                    </div>
+                </div>
+                
+                <!-- Simple Category Scroll List -->
+                <div class="products-slider" style="gap: 24px;">
+                    <!-- Item 1: Smoky Tandoori Chicken -->
+                    <div class="item-card" style="width: 270px; flex-shrink: 0;">
+                        <div class="item-card-image-wrap" style="height: 180px;">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDj0z8X1GcHlAh7ZAraTiZQckdX-9WHeIIN5FtdlekDq8hzftbsV497jTPhgdgqlp2LQVOdrQSafLHlqRTTEraMu_TsUvK4pVSIVljERo2CCScT5Ey0RFmmEQ5pKTY9XNLDT7p5vWmH50BvCtnPu2GdKRfGuTRE-miYYa7EnFeR7CNupmGWAr2lGd1RMZnSrAJ38sl19H_USB4BEeOD3iaSLIp5GluCaRCaU3p1aPaxrfT57cnSNUGNWc756QAwht_e3yRZbPAc7Yo" alt="Smoky Tandoori Chicken" class="item-card-image">
+                            <div class="nonveg-badge">
+                                <div class="nonveg-icon"><div></div></div>
+                            </div>
+                        </div>
+                        <div class="item-card-content" style="padding: 16px;">
+                            <div class="item-card-header" style="margin-bottom: 4px;">
+                                <h3 class="item-title" style="font-size: 16px;">Smoky Tandoori Chicken</h3>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 12px;">
+                                <span class="item-price" style="font-size: 18px;">₹380</span>
+                                <button class="action-btn" onclick="addToCart('smoky-tandoori-chicken')" style="background-color: var(--color-surface-container); color: var(--color-secondary);">
+                                    <span class="material-symbols-outlined">add</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 2: 24h Dal -->
+                    <div class="item-card" style="width: 270px; flex-shrink: 0;">
+                        <div class="item-card-image-wrap" style="height: 180px;">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnYYhyXS6TEwVysGvzmePZyIZY4eWQtwPFmP9V2MMQH16cr6yGnuaMQPSjjdJe0FRpW-GJ9sat7mnA20yl5w4L7srQTrrO2x7Y4zfCtfBywtTDcvNE_02S8CmUNib3OA93wQKesKMCAi4MgMZcGovrOMr2gSWYn0vmyIGNBGjfKv4Vx-xk3yWJUgJstPjQlJ_0wqCUSjWVH8p0NsGcwi4gKUF9swI2Ze_TBFoQOnosuy9XNzu0sAxO6cJinElCTYRdxXTBdXJK-N4" alt="24hr Slow-Cooked Dal" class="item-card-image">
+                            <div class="veg-badge">
+                                <div class="veg-icon"><div></div></div>
+                            </div>
+                        </div>
+                        <div class="item-card-content" style="padding: 16px;">
+                            <div class="item-card-header" style="margin-bottom: 4px;">
+                                <h3 class="item-title" style="font-size: 16px;">24hr Slow-Cooked Dal</h3>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 12px;">
+                                <span class="item-price" style="font-size: 18px;">₹320</span>
+                                <button class="action-btn" onclick="addToCart('slow-cooked-dal-24h')" style="background-color: var(--color-surface-container); color: var(--color-secondary);">
+                                    <span class="material-symbols-outlined">add</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 3: Butter Garlic Naan -->
+                    <div class="item-card" style="width: 270px; flex-shrink: 0;">
+                        <div class="item-card-image-wrap" style="height: 180px;">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuByaGefRiVLsBEx_T6louYEHUm6d32kDrVdu4B5eDrXmn8kMPrjPMQ7WVuy9NIbIGR2v4xVdXglDantbIPE3rShMAWxt6JyXAJICh5_3Oy7LnwpOFf7R1RLyo2Sm6LBa9ZqaOahG62MMJfzVVKQLdyVz2hfa7IjU96YgW8JexgnXVH46pOUFJ4ksmWpWo0Z7qra3ZEWZWLyb52X_5t5CzeYzptNWUv-Tgv9CYM7TDcw-FAyeIe0FvJZ7SDAK3UpRhd-JI633Y9rnxE" alt="Butter Garlic Naan" class="item-card-image">
+                            <div class="veg-badge">
+                                <div class="veg-icon"><div></div></div>
+                            </div>
+                        </div>
+                        <div class="item-card-content" style="padding: 16px;">
+                            <div class="item-card-header" style="margin-bottom: 4px;">
+                                <h3 class="item-title" style="font-size: 16px;">Butter Garlic Naan</h3>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 12px;">
+                                <span class="item-price" style="font-size: 18px;">₹85</span>
+                                <button class="action-btn" onclick="addToCart('butter-garlic-naan')" style="background-color: var(--color-surface-container); color: var(--color-secondary);">
+                                    <span class="material-symbols-outlined">add</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 4: Pista Malai Kulfi -->
+                    <div class="item-card" style="width: 270px; flex-shrink: 0;">
+                        <div class="item-card-image-wrap" style="height: 180px;">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDf456zJl72teyb_UMl22TXsddU4qrcziXoeD2QLJeUInq6dMugOukNxTfRFqQqtr4QqLIqTA3aDdcivXEI4lpd5goXlJ87wBG9xlKfAY_sMpvesAKYOFC_nbRvL9ENxGQpgTt-63Agv65vnVMk4EH3r4QP0UL2yFhpu0MOng45yqhqhOoSyaFWirciaxeck8yGoA-o85FoQ6E_oo9RDbPpoqmL1MHbAHSClZ3S37wmA1ttkrkupYxAvMxDTk1Y96Gzx9JlC2Id6bM" alt="Pista Malai Kulfi" class="item-card-image">
+                            <div class="veg-badge">
+                                <div class="veg-icon"><div></div></div>
+                            </div>
+                        </div>
+                        <div class="item-card-content" style="padding: 16px;">
+                            <div class="item-card-header" style="margin-bottom: 4px;">
+                                <h3 class="item-title" style="font-size: 16px;">Pista Malai Kulfi</h3>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 12px;">
+                                <span class="item-price" style="font-size: 18px;">₹120</span>
+                                <button class="action-btn" onclick="addToCart('pista-malai-kulfi')" style="background-color: var(--color-surface-container); color: var(--color-secondary);">
+                                    <span class="material-symbols-outlined">add</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand-col">
+                <a href="index.html" class="logo">Delhi <span>Delights</span></a>
+                <p class="footer-desc">Bringing the authentic street food and royal Mughlai delicacies of Old Delhi straight to your kitchen. Quality, taste, and tradition blended together.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-link"><span class="material-symbols-outlined">explore</span></a>
+                    <a href="#" class="social-link"><span class="material-symbols-outlined">campaign</span></a>
+                    <a href="#" class="social-link"><span class="material-symbols-outlined">alternate_email</span></a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html" class="footer-link footer-link-active">Home</a></li>
+                    <li><a href="menu.html" class="footer-link">Menu</a></li>
+                    <li><a href="categories.html" class="footer-link">Categories</a></li>
+                    <li><a href="story.html" class="footer-link">Our Story</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="footer-title">Support</h4>
+                <ul class="footer-links">
+                    <li><a href="locations.html" class="footer-link">Locations</a></li>
+                    <li><a href="#" class="footer-link">Help Center</a></li>
+                    <li><a href="#" class="footer-link">Contact Us</a></li>
+                    <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-newsletter">
+                <h4 class="footer-title">Subscribe</h4>
+                <p>Subscribe for flavor updates & secret recipes from Chef Vikram.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+                    <input type="email" class="newsletter-input" placeholder="Your Email Address" required>
+                    <button type="submit" class="btn btn-primary" style="padding: 10px;">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <p>© 2026 Delhi Delights. Authentic Flavors from the Heart of Delhi. Built with Tradition.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky Footer View Cart -->
+    <div class="mobile-cart-bar" id="mobile-cart-bar" onclick="openCart()">
+        <div class="mobile-cart-left">
+            <span class="mobile-cart-count" id="mobile-cart-qty">0</span>
+            <span class="mobile-cart-label">View Cart</span>
+        </div>
+        <div class="mobile-cart-price" id="mobile-cart-price-val">₹0</div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/whatsapp.js"></script>
+</body>
+</html>

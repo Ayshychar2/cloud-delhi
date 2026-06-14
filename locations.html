@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Kitchens in South Delhi | Delhi Delights</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/whatsapp-widget.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">Delhi <span>Delights</span></a>
+            
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="menu.html" class="nav-link">Menu</a>
+                <a href="categories.html" class="nav-link">Categories</a>
+                <a href="locations.html" class="nav-link active">Locations</a>
+                <a href="story.html" class="nav-link">Our Story</a>
+            </nav>
+            
+            <div class="header-actions">
+                <div class="header-location">
+                    <span class="material-symbols-outlined">location_on</span>
+                    <span>South Delhi</span>
+                </div>
+                <button class="action-btn" onclick="openCart()">
+                    <span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+                    <span class="badge cart-badge-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main style="padding-bottom: 80px;">
+        
+        <!-- Hero Section -->
+        <section class="section bg-light" style="padding: 60px 0; overflow: hidden; position: relative;">
+            <div class="container delivery-flex" style="align-items: center;">
+                <div>
+                    <span class="radius-badge" style="margin-bottom: 16px;">Kitchen Network</span>
+                    <h1 class="hero-title" style="font-size: 40px; margin-bottom: 16px;">Our Kitchens in South Delhi</h1>
+                    <p class="hero-desc" style="max-width: 540px; font-size: 16px;">From the historic lanes of Hauz Khas to the bustling markets of Saket, our strategically located cloud kitchens ensure that the authentic flavors of Delhi reach your doorstep steaming hot.</p>
+                </div>
+                <div style="display: flex; justify-content: flex-end;">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBADn5l_KiPK9ti9LBW7utnJHuf3rENdOf9SViuCGKKuhpdNL3bhDuCdqfEnCjfxOhAWSmrjSzvkI4AQgzyOUUoaB4fNt8bA3_nB8X8HNbBZhX7fJxuW6RXURkh2OYCsrBPAa0qT4zO6Y5fuRMA33FVcg0m7E99L4CX_SRDjlRh5aRrsbF1Ur6Sqat6dZ5GCfqO77lD41Lq_PC3ore5MYJyr2wZ5183PIrsKHv8iFSeT5mVxbU_xNwjo05roKAJYNlBAsE23HUdbDY" alt="Thali Feast gourmet plating" style="border-radius: 40px; box-shadow: var(--shadow-md); max-width: 420px; width: 100%;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Locations List -->
+        <section class="section">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <div>
+                        <h2 class="section-title">Our Active <span>Branches</span></h2>
+                        <p class="section-subtitle">Timings and contact details of our kitchen hubs.</p>
+                    </div>
+                </div>
+
+                <div class="locations-grid">
+                    <!-- Saket Branch -->
+                    <div class="location-card">
+                        <div class="location-card-img-wrap">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdarBQ-3eD74cVk8Fm_TbKdP5l4LPzr1swedNH_1TvG8JQG8C1qPq9UY7BzYZjK-alILUo_EHy8kKudc0WbmwYiG8R9iS206QfwZpGXy8rryHIQfoU2uVheGHHkJcH8ta6siU93B_hYR5y6WPtaeIanaTpdHoNhPiapvjmqATkZDkmS6BlYdR0NT7QvJID6lgI5vCcXJ8h1Z8ooqtB3ekkKyrwio0jEvoHxJEUPc0z371Z9shZ1XEJ6H91fNLtYYpOgr-B-tYGG5w" alt="Saket Delhi cityscape" class="location-card-img">
+                            <div class="location-top-badge">
+                                <span class="material-symbols-outlined" style="font-size: 14px; font-variation-settings: 'FILL' 1;">star</span>
+                                <span>Top Rated</span>
+                            </div>
+                        </div>
+                        <div class="location-card-body">
+                            <h3 class="location-title">Saket</h3>
+                            <div class="location-info-list">
+                                <div class="location-info-item">
+                                    <span class="material-symbols-outlined">location_on</span>
+                                    <p>Plot No. 12, Community Centre, Saket, New Delhi 110017</p>
+                                </div>
+                                <div class="location-info-item">
+                                    <span class="material-symbols-outlined">call</span>
+                                    <p>+91 11 4567 8901</p>
+                                </div>
+                                <div class="location-info-item">
+                                    <span class="material-symbols-outlined">schedule</span>
+                                    <p>11:00 AM - 11:30 PM</p>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary location-card-btn" onclick="window.location.href='menu.html'">Order from Saket</button>
+                        </div>
+                    </div>
+
+                    <!-- Hauz Khas Branch -->
+                    <div class="location-card">
+                        <div class="location-card-img-wrap">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCegHmsPFeYOnzrLqWmL68t5-kVLzOqdV38pbhsAoM3jacCQ19hkT6wWHRDahPmBWMckB7D1KcrS2DyIbertYuq_Vg4rd3lUWKGDa_hcK60l3-pYZ0XV0sYO-x-cMz5xs7mgAVdTSGCD5xa0lvPqInBgImAm49BiaJ1OlLUSb_p68pspRBwRd3lEJxyFo5SWVgw_tyK7vXGhw5lzmJRGpNAMf5hxGZ2wvw__SFShKsPU3509YBJtC5546brgAV-9kDf5jgIrXhxZRw" alt="Hauz Khas ruins arches" class="location-card-img">
+                        </div>
+                        <div class="location-card-body">
+                            <h3 class="location-title">Hauz Khas</h3>
+                            <div class="location-info-list">
+                                <div class="location-info-item">
+                                    <span class="material-symbols-outlined">location_on</span>
+                                    <p>Hauz Khas Village, Near Deer Park, New Delhi 110016</p>
+                                </div>
+                                <div class="location-info-item">
+                                    <span class="material-symbols-outlined">call</span>
+                                    <p>+91 11 4567 8902</p>
+                                </div>
+                                <div class="location-info-item">
+                                    <span class="material-symbols-outlined">schedule</span>
+                                    <p>12:00 PM - 12:00 AM</p>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary location-card-btn" onclick="window.location.href='menu.html'">Order from Hauz Khas</button>
+                        </div>
+                    </div>
+
+                    <!-- GK Branch -->
+                    <div class="location-card">
+                        <div class="location-card-img-wrap">
+                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXD4l1y99BLUHH9BU2JcdyfSYunMZDo9w3GPtmwnSQmqlaQGZ-eV8Zc0gZxd8k3KoKeVifM7NxsnCkjFnQkKnn_RtuZsxUL6gnRbGiyd7-6Ws3sf1gWUZZdeIAbPGWuaz1_PTCCgEkdUXCOR4OCzwUtVpCPdfBFt7AjpSFH6KOdpK9wfUdnm6YKfDDeFFJR1QYT_vFUL-LSFyl1TwomdHB9pODygubjsJktUc72oQQfbMnwTyYj8O3wwZflEzaIas17u857mb86O0" alt="Greater Kailash market store" class="location-card-img">
+                        </div>
+                        <div class="location-card-body">
+                            <h3 class="location-title">Greater Kailash</h3>
+                            <div class="location-info-list">
+                                <div class="location-info-item">
+                                    <span class="material-symbols-outlined">location_on</span>
+                                    <p>M-Block Market, GK-II, New Delhi 110048</p>
+                                </div>
+                                <div class="location-info-item">
+                                    <span class="material-symbols-outlined">call</span>
+                                    <p>+91 11 4567 8903</p>
+                                </div>
+                                <div class="location-info-item">
+                                    <span class="material-symbols-outlined">schedule</span>
+                                    <p>11:00 AM - 11:30 PM</p>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary location-card-btn" onclick="window.location.href='menu.html'">Order from GK</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Delivery Radius Map and Pincode Checker -->
+        <section class="section bg-light jali-pattern">
+            <div class="container delivery-flex">
+                <div class="delivery-details">
+                    <span class="radius-badge">Delivery Radius</span>
+                    <h2 class="section-title" style="font-size: 32px; margin: 0;">Check if we deliver to your neighborhood</h2>
+                    
+                    <div class="delivery-features">
+                        <div class="delivery-feat-item">
+                            <div class="delivery-feat-icon">
+                                <span class="material-symbols-outlined">bolt</span>
+                            </div>
+                            <div class="delivery-feat-content">
+                                <h4>Fastest Delivery Promise</h4>
+                                <p>We guarantee delivery within 35 minutes across South Delhi. Our kitchen-to-door logistics are optimized for the local traffic flow.</p>
+                            </div>
+                        </div>
+                        <div class="delivery-feat-item">
+                            <div class="delivery-feat-icon">
+                                <span class="material-symbols-outlined">distance</span>
+                            </div>
+                            <div class="delivery-feat-content">
+                                <h4>8KM Delivery Circle</h4>
+                                <p>Each of our kitchens serves a dedicated 8km radius to maintain food temperature and quality. No cold rotis, ever.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="delivery-checker-box">
+                        <h4 style="font-family: var(--font-headlines); color: var(--color-primary); font-weight: 700;">Check availability in South Delhi:</h4>
+                        <div class="checker-form">
+                            <input type="text" id="pin-code-input" class="checker-input" placeholder="Enter 6-digit Pincode (e.g. 110017)">
+                            <button class="btn btn-primary" style="padding: 10px 24px;" onclick="checkDeliveryPin()">Check Pincode</button>
+                        </div>
+                        <div id="pin-code-result" class="checker-result"></div>
+                    </div>
+                </div>
+
+                <div class="delivery-map-wrapper">
+                    <div class="delivery-map-circle">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhjTTHCPlZ-7uaEG9BUGn1bej42LlstU34eoEBl0Evj5U1oVGtzvASgU9WjSBYrf-d_xXfBxB7MOVO6YbVyiQBAVZ7iaihgKgpWHyNI-5vFu1skkg1TaRwxRS2eDhqwFW0A2JZnT3BQRS1qbe7Ug0KnwwBWr3mVC0XOACUzKcrPIp_8c-7vCNWIyUN9aWbaw0LNelRLVKuXlyiK3NN2JZYugkzSrwrmdYkUah2kZg4VaaG6OGQNcDEtBLaU_r_lRWQ4PE5xGzbQNc" alt="Minimalist South Delhi delivery map illustration" class="map-placeholder-img">
+                        <span class="material-symbols-outlined map-pin map-pin-1">location_on</span>
+                        <span class="material-symbols-outlined map-pin map-pin-2">location_on</span>
+                        <span class="material-symbols-outlined map-pin map-pin-3">location_on</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand-col">
+                <a href="index.html" class="logo">Delhi <span>Delights</span></a>
+                <p class="footer-desc">Bringing the authentic street food and royal Mughlai delicacies of Old Delhi straight to your kitchen. Quality, taste, and tradition blended together.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-link"><span class="material-symbols-outlined">explore</span></a>
+                    <a href="#" class="social-link"><span class="material-symbols-outlined">campaign</span></a>
+                    <a href="#" class="social-link"><span class="material-symbols-outlined">alternate_email</span></a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html" class="footer-link">Home</a></li>
+                    <li><a href="menu.html" class="footer-link">Menu</a></li>
+                    <li><a href="categories.html" class="footer-link">Categories</a></li>
+                    <li><a href="locations.html" class="footer-link footer-link-active">Locations</a></li>
+                    <li><a href="story.html" class="footer-link">Our Story</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="footer-title">Support</h4>
+                <ul class="footer-links">
+                    <li><a href="locations.html" class="footer-link">Locations</a></li>
+                    <li><a href="#" class="footer-link">Help Center</a></li>
+                    <li><a href="#" class="footer-link">Contact Us</a></li>
+                    <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-newsletter">
+                <h4 class="footer-title">Subscribe</h4>
+                <p>Subscribe for flavor updates & secret recipes from Chef Vikram.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed successfully!');">
+                    <input type="email" class="newsletter-input" placeholder="Your Email Address" required>
+                    <button type="submit" class="btn btn-primary" style="padding: 10px;">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="container footer-bottom">
+            <p>© 2026 Delhi Delights. Authentic Flavors from the Heart of Delhi. Built with Tradition.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Sticky Footer View Cart -->
+    <div class="mobile-cart-bar" id="mobile-cart-bar" onclick="openCart()">
+        <div class="mobile-cart-left">
+            <span class="mobile-cart-count" id="mobile-cart-qty">0</span>
+            <span class="mobile-cart-label">View Cart</span>
+        </div>
+        <div class="mobile-cart-price" id="mobile-cart-price-val">₹0</div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/whatsapp.js"></script>
+</body>
+</html>
